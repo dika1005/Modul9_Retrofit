@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Background merah -->
+    <path
+        android:fillColor="#CC0000"
+        android:pathData="M0,0h100v100h-100z"/>
+    
+    <!-- Text CNN (simplified) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15,35 L15,65 L25,65 L25,35 L15,35 M20,30 C8,30 5,45 5,50 C5,55 8,70 20,70 C32,70 35,55 35,50 C35,45 32,30 20,30"/>
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,30 L40,70 L50,70 L50,45 L60,70 L70,70 L70,30 L60,30 L60,55 L50,30 L40,30"/>
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M75,30 L75,70 L85,70 L85,45 L95,70 L100,70 L100,30 L95,30 L95,55 L85,30 L75,30"/>
+    
+</vector>
