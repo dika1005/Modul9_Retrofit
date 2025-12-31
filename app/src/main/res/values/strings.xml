@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Modul9_Retrofit</string>
+    
+    <!-- Content descriptions -->
+    <string name="cd_back">Kembali</string>
+    <string name="cd_cnn_logo">Logo CNN</string>
+    <string name="cd_news_thumbnail">Thumbnail berita</string>
+    <string name="cd_view_detail">Lihat detail</string>
+    
+    <!-- Headers -->
+    <string name="header_cnn">CNN Indonesia | Berita Terbaru, Terkini Indonesia, Dunia</string>
+    <string name="header_jadwal_anime">Jadwal Anime</string>
+    
+    <!-- Error messages -->
+    <string name="error_load_failed">Gagal memuat data</string>
+    <string name="btn_retry">Coba Lagi</string>
+    
+    <!-- Placeholder texts -->
+    <string name="placeholder_news_title">Judul Berita</string>
+    <string name="placeholder_news_desc">Deskripsi berita</string>
+    <string name="placeholder_anime_title">Judul Anime</string>
 </resources>

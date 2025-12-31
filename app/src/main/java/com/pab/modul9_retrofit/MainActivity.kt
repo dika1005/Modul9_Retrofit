@@ -27,7 +27,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupRecyclerView()
+        setupBottomNavigation()
         fetchNews()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Reset bottom nav to news when returning
+        binding.bottomNav.selectedItemId = R.id.nav_news
     }
 
     private fun setupRecyclerView() {
@@ -40,6 +47,24 @@ class MainActivity : AppCompatActivity() {
         binding.rvNews.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = newsAdapter
+        }
+    }
+
+    private fun setupBottomNavigation() {
+        binding.bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_news -> {
+                    // Already on news, do nothing
+                    true
+                }
+                R.id.nav_anime -> {
+                    // Navigate to AnimeActivity
+                    val intent = Intent(this, AnimeActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                else -> false
+            }
         }
     }
 
@@ -74,7 +99,7 @@ class MainActivity : AppCompatActivity() {
                 binding.rvNews.visibility = View.VISIBLE
                 showErrorDialog("An error occurred: ${t.message}")
             }
-        })
+        })  
     }
 
     private fun showErrorDialog(message: String) {

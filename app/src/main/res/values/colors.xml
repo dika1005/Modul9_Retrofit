@@ -2,4 +2,23 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary colors -->
+    <color name="cnn_red">#CC0000</color>
+    <color name="anime_purple">#7C4DFF</color>
+    <color name="anime_purple_light">#B39DDB</color>
+    
+    <!-- Background colors -->
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_light_gray">#FAFAFA</color>
+    <color name="bg_placeholder">#E0E0E0</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_hint">#757575</color>
+    <color name="text_gray">#9E9E9E</color>
+    
+    <!-- Divider -->
+    <color name="divider">#E0E0E0</color>
 </resources>

@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="12dp"
-    android:background="#FFFFFF">
+    android:background="@color/bg_white">
 
     <!-- Thumbnail berita -->
     <ImageView
@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:background="#E0E0E0"
-        android:contentDescription="News thumbnail" />
+        android:background="@color/bg_placeholder"
+        android:contentDescription="@string/cd_news_thumbnail" />
 
     <!-- Judul berita -->
     <TextView
@@ -21,8 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Judul Berita"
-        android:textColor="#000000"
+        android:text="@string/placeholder_news_title"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         android:maxLines="3"
@@ -34,8 +34,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Deskripsi berita"
-        android:textColor="#666666"
+        android:text="@string/placeholder_news_desc"
+        android:textColor="@color/text_secondary"
         android:textSize="13sp"
         android:maxLines="3"
         android:ellipsize="end" />
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:text="2025-12-29"
-        android:textColor="#CC0000"
+        android:textColor="@color/cnn_red"
         android:textSize="11sp" />
 
     <!-- Divider -->
@@ -55,6 +55,6 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="12dp"
-        android:background="#E0E0E0" />
+        android:background="@color/divider" />
 
 </LinearLayout>
